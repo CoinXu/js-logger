@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "target": "es5",
+    "sourceMap": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false,
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "declaration": true,
+    "traceResolution": true,
+    "declarationDir": "@types",
+    "paths": {
+      "@/*": ["src/*"],
+      "@impl/*": ["src/impl/*"],
+      "@inter/*": ["src/inter/*"]
+    }
+  },
+  "exclude": [
+    "test",
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "name": "edu100-logger",
+  "description": "logger for edu100 frontend group",
+  "version": "0.0.6",
+  "repository": "",
+  "keywords": [
+    "logger",
+    "browser logger",
+    "edu100",
+    "100.com"
+  ],
+  "author": {
+    "name": "coinxu",
+    "email": "duanxian0605@gmail.com",
+    "url": "https://github.com/coinxu"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "private": false,
+  "main": "./build/logger.js",
+  "scripts": {
+    "dev": "webpack-dev-server --color --progress --info --config ./support/webpack.config.dev.js",
+    "build": "webpack --color --progress --config ./support/webpack.config.prod.js",
+    "test": "bash support/test.sh",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "@types/chai": "4.1.4",
+    "@types/karma-chai": "^0.1.1",
+    "@types/mocha": "5.2.5",
+    "@types/node": "8.10.26",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "chai": "^4.1.2",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.4",
+    "jquery": "^3.3.1",
+    "karma": "^2.0.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-mocha": "^1.3.0",
+    "karma-typescript": "3.0.13",
+    "karma-webpack": "^3.0.5",
+    "mocha": "^5.2.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "ts-loader": "3.3.1",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "typescript": "^2.9.2",
+    "uglify-es": "git://github.com/mishoo/UglifyJS2#harmony",
+    "uglifyjs-webpack-plugin": "^1.1.1",
+    "webpack": "^3.6.0",
+    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-dev-server": "^2.9.1",
+    "webpack-merge": "^4.1.0"
+  },
+  "typings": "./build/@types/index.d.ts"
+}

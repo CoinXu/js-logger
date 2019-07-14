@@ -1,7 +1,7 @@
 {
-  "name": "edu100-logger",
+  "name": "js-logger",
   "description": "logger for edu100 frontend group",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "repository": "",
   "keywords": [
     "logger",
